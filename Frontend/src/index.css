@@ -1,0 +1,634 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Setting default font family for the entire document */
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Adjusting font size for navigation links */
+.nav-link {
+  font-size: 12px !important;
+}
+
+/* Styling the navigation bar */
+.nav {
+  gap: 0.5rem !important;
+  background-color: rgba(251, 251, 253, 0.8) !important;
+  backdrop-filter: saturate(180%) blur(20px) !important;
+}
+
+/* Making the header sticky */
+.header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1020 !important;
+}
+
+/* Removing padding and border from navbar toggler */
+.navbar-toggler {
+  padding: 0 !important;
+  border: none !important;
+}
+
+/* Removing box shadow when navbar toggler is focused */
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+/* Styles for footer links on hover */
+.footer-link:hover {
+  color: #333 !important;
+  text-decoration: underline !important;
+  transition: all 0.1s ease-in-out;
+}
+
+/* Styling offcanvas navigation */
+.offcanvas-nav {
+  height: 62vh !important;
+  overflow-y: scroll !important;
+}
+
+/* Removing default list styling */
+li {
+  list-style: none !important;
+  padding: 3px 0 !important;
+}
+
+/* Adjusting font size and letter spacing for profile lists */
+.my-profile-lists > li > div > small {
+  font-size: 11px !important;
+  letter-spacing: 0.02rem !important;
+}
+
+/* Styling search input when focused */
+.search:focus {
+  border-color: transparent !important; /* Set border color to transparent when input is focused */
+  box-shadow: none !important; /* Remove box shadow when input is focused */
+  outline: none !important; /* Remove outline when input is focused (this is important for accessibility) */
+}
+
+.search-reviews:focus {
+  box-shadow: none !important; /* Remove box shadow when input is focused */
+}
+
+/* Adjusting font size for quick links */
+.quick-links > li > div > small {
+  font-size: 0.8rem !important;
+}
+
+/* Styling banner text */
+.banner-text {
+  color: #6e6e73;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px !important;
+  display: inline;
+}
+
+/* Setting styles for latest text */
+.latest-text > span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.latest-text {
+  color: rgb(100, 100, 100) !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Setting styles for swiper container */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* Setting styles for swiper slides */
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Setting styles for images inside swiper slides */
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Customizing navigation buttons for swiper */
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-prev::after {
+  content: "next" !important;
+  padding-left: 2rem !important;
+  font-size: 18px !important;
+}
+
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
+  content: "prev" !important;
+  padding-right: 2rem !important;
+  font-size: 18px !important;
+}
+
+/* Setting width for swiper slides */
+.swiper-slide {
+  width: 33%;
+}
+
+.mySwiper-latest {
+  padding-left: 5rem !important;
+}
+
+/* Positioning text over images */
+.image-container {
+  position: relative;
+}
+
+.image-text {
+  position: absolute;
+  top: 15%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  display: flex; /* Add flex display */
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the start */
+}
+
+/* Adjusting font sizes for text over images */
+.image-text > small {
+  font-size: 12px !important;
+  margin-bottom: 4px; /* Adjust spacing between elements */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-text > h4 {
+  font-size: 28px !important;
+  line-height: 1.14286;
+  font-weight: 600;
+  margin: 0; /* Reset margin to remove default spacing */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-text > div {
+  font-size: 17px !important;
+}
+
+/* Styling for login text */
+.login-text {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-text-heading {
+  color: rgb(74, 74, 74) !important;
+}
+
+/* Media query for latest cards */
+@media screen and (max-width: 768px) {
+  .mySwiper-latest {
+    padding-left: 3rem !important;
+  }
+
+  .confirm-order-cart-name {
+    display: flex;
+    justify-content: center;
+  }
+
+  .review-container {
+    padding: 25px 20px !important;
+  }
+}
+
+/* Styling for card banner title */
+.card-banner-title {
+  white-space: nowrap !important;
+}
+
+/* Setting font family for featured heading */
+.featured-heading {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Adjusting padding for featured swiper */
+.featured-swiper {
+  padding-left: 5rem !important;
+}
+
+/* Setting styles for featured product title */
+.featured-product-title {
+  font-size: 17px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 600 !important;
+}
+
+/* Adjusting font size for featured product price */
+.featured-product-price {
+  font-size: 14px !important;
+}
+
+/* Setting width for featured slides */
+.featured-slide {
+  width: 18rem !important;
+}
+
+/* Styling forgot password button */
+.forgot-password-btn {
+  background-color: #0071e3 !important;
+  color: white !important;
+  border-radius: 8px !important;
+}
+
+.forgot-password-btn:hover {
+  background-color: #0077ed !important;
+}
+
+/* Adjusting styles for focused input fields */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="textarea"]:focus,
+input[type="number"]:focus {
+  border: 1.5px solid #0071e3 !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+textarea:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Adding ellipsis to long descriptions */
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Styling add to cart button in product detail page */
+.product-detail-addtocart-btn {
+  background-color: #0071e3 !important;
+  color: white !important;
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+  border-radius: 18px !important;
+  --bs-btn-border-color: none !important;
+}
+
+.product-detail-addtocart-btn:hover {
+  background-color: #0077ed !important;
+}
+
+/* Styling add to cart button */
+.add-to-cart-btn {
+  background-color: #0071e3 !important;
+  color: white !important;
+  border-radius: 20px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  --bs-btn-border-color: none !important;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0077ed !important;
+}
+
+/* Removing border color for cart remove button */
+.cart-remove-btn {
+  --bs-btn-border-color: none !important;
+}
+
+/* Styling headings */
+.allProduct-heading,
+.filter-heading {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/* Styling for no products heading */
+.no-products-heading {
+  font-size: 3.7rem !important;
+  color: rgb(160, 160, 160) !important;
+}
+
+/* Removing border color and box shadow when form select is focused */
+.form-select:focus {
+  border-color: transparent !important ;
+  box-shadow: none !important;
+}
+
+/* Styling sign out button */
+.sign-out-btn {
+  background-color: #0071e3 !important;
+  color: white !important;
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+  border-radius: 18px !important;
+  --bs-btn-border-color: none !important;
+}
+
+.sign-out-btn:hover {
+  background-color: #0077ed !important;
+}
+
+/* Adjusting styles for account icon */
+.account-icon {
+  color: #0071e3 !important;
+  font-size: 1.2rem !important;
+}
+
+/* Styling sign out button */
+.sign-out-btn {
+  background-color: #0071e3 !important;
+  color: white !important;
+  padding: 3px 12px !important;
+  border-radius: 18px !important;
+  font-size: 0.8rem !important;
+  --bs-btn-border-color: none !important;
+}
+
+/* Styling for account, cart, and empty bag headings */
+.account-heading,
+.cart-heading,
+.empty-bag-heading {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/* Adjusting font sizes and styles for cart product details */
+.cart-product-name {
+  font-size: 24px !important;
+  line-height: 1.16667;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.cart-item-price {
+  font-size: 20px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  color: #1d1d1f;
+}
+
+/* Adjusting font size for summary text */
+.summary-text > p {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  flex-grow: 1;
+}
+
+/* Styling for total summary text */
+.total-summary-text {
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  /* font-family: Helvetica, Arial, sans-serif; */
+  color: #1d1d1f;
+}
+
+/* Styling checkout button */
+.checkout-btn {
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 980px;
+  background: #0071e3;
+  color: #fff;
+  --sk-button-margin-horizontal: 14px;
+  --sk-button-margin-vertical: 14px;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  border: 1px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  min-width: 30px;
+  padding: 17px 30px;
+  --sk-button-margin-horizontal: 22px;
+  --sk-button-margin-vertical: 22px;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  --sk-button-margin-horizontal: 9px;
+  --sk-button-margin-vertical: 9px;
+  border-radius: 12px;
+  white-space: normal;
+  display: inline-block;
+}
+
+/* Styling for checkout button hover state */
+.checkout-btn:hover {
+  background: #0077ed;
+  color: #fff;
+  border-color: transparent;
+}
+
+/* Styling review button */
+.review-button {
+  background: #0071e3 !important;
+  border: 0 !important;
+  padding: 6px 20px !important;
+  color: #fff !important;
+  border-radius: 2rem !important;
+}
+
+/* Styling for review button hover state */
+.review-button:hover {
+  background-color: #0077ed !important;
+}
+
+/* Styling view order button */
+.view-order-btn {
+  background: #0071e3 !important;
+  --bs-btn-border-color: none !important;
+}
+
+/* Styling for view order button hover state */
+.view-order-btn:hover {
+  background-color: #0077ed !important;
+}
+
+/* Styling shipping text */
+.shipping-text {
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+/* Styling shipping header */
+.shipping-header {
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Styling form header */
+.form-header {
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  /* letter-spacing: 0.009em; */
+  font-family: "Roboto", sans-serif;
+}
+
+/* Styling cart text */
+.cart-text {
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  /* letter-spacing: 0.009em; */
+  font-family: "Roboto", sans-serif;
+}
+
+/* Styling summary text */
+.summary-text {
+  font-size: 18px;
+  line-height: 1.16667;
+  font-weight: 600;
+  /* letter-spacing: 0.009em; */
+  font-family: "Roboto", sans-serif;
+}
+
+/* Styling payment heading */
+.payment-heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+/* Styling order heading */
+.order-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  white-space: nowrap !important;
+}
+
+/* Styling disabled state for checkout button */
+.checkout-btn:disabled,
+.checkout-btn[disabled] {
+  background: #0071e3;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+/* Styling hover state for disabled checkout button */
+.checkout-btn:disabled:hover,
+.checkout-btn[disabled]:hover {
+  background: #0071e3;
+  color: #fff;
+}
+
+/* Setting up grid layout for dashboard */
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+/* Styling menu */
+.menu {
+  grid-column: 1 /2;
+}
+
+/* Styling content */
+.content {
+  grid-column: 2/ -1;
+}
+
+/* Styling sidebar links on hover */
+.sidebar-link:hover {
+  background-color: #e2e3e5 !important;
+  transition: all 0.7ms ease-in-out;
+}
+
+/* Adjusting font size for sidebar link text */
+.sidebar-link-text {
+  font-size: 1.1rem !important;
+}
+
+/* Styling loading container */
+.loading-container {
+  height: 80vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling spinner */
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #333;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+/* Keyframes for spinner animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Styling reviews heading */
+.reviews-heading {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Styling for MUI DataGrid column headers */
+.MuiDataGrid-columnHeadersInner {
+  background-color: #0071e3 !important;
+  color: #fff !important;
+}
+
+/* Adjusting color for MUI SVG icons */
+.MuiDataGrid-columnHeadersInner {
+  color: #fff !important;
+}
+.MuiSvgIcon-fontSizeSmall {
+  color: #fff;
+}
+
+/* Styling for cart count */
+.cart-count {
+  cursor: pointer !important;
+}
+
+/* Styling for cart count text */
+.cart-count-text {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 9px !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  border-radius: 50% !important;
+  transform: translate(-31px, 7px);
+}
+
+/* Adjusting height for sidebar */
+.sidebar {
+  height: 100vh !important;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    height: auto !important;
+  }
+}
